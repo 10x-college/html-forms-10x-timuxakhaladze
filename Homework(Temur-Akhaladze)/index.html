@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovian Drift SOS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!--### Phase 2: Pilot Credentials (Fieldset 1)-->
+    <iframe id="bg-frame" src="./styles/effect.html"></iframe>
+    <form method="post" action="#">
+        
+        <fielset>
+            <legend>Pilot Credentials</legend>
+                <label for="Pilot Name:">Pilot Name:</label>
+                <input
+                 type="text"
+                 id="Pilot Name:"
+                 placeholder="enter name"
+                 required>
+                <label for="Access Code:">Access Code:</label>
+                <input
+                 type="password"
+                 id="Access Code:"
+                 name="Access Code:"
+                 placeholder="password"
+                 required>
+                <label for="Command Email:">Command Email:</label>
+                <input 
+                type="email"
+                id="Command Email:"
+                name="email"
+                required>
+        </fielset>      
+    <!--### Phase 3: Vessel Diagnostics (Fieldset 2)-->
+       <fieldset>
+            <legend>Vessel Diagnostics</legend>
+               <label for="Hull Damage">Hull Damage (%):</label>
+               <input
+               type="number"
+               id="Hull-Damage"
+               name="hull_damage"
+               required>
+                <label for="Emergency Level:">Emergency Level:</label>
+                <select id="Emergency Level:"
+                        name="Emergency Level:"
+                        required>
+                        <option value="low">low</option>
+                        <option value="medium">medium</option>
+                        <option value="hight">hight</option>
+                 </select>
+       </fieldset>
+    <!--### Phase 4: Mission Log & Evidence (Fieldset 3)-->
+       <fieldset>
+            <legend>Mission Log & Evidence</legend>
+                <label for="SOS Message:">SOS Message</label>
+                <textarea
+                  id="SOS Message:"
+                  name="SOS Message:"
+                  rows="3"
+                  required>
+                </textarea>
+            <div>
+                <input
+                type="checkbox"
+                id="quarantine"
+                name="quarantine_agreement"
+                required>
+                <label for="quarantine">I agree to quarantine protocols.</label>
+            </div>
+       </fieldset>
+    <!--### Phase 5: The Control Panel (Buttons)-->
+        <button type="submit">INITIATE TRANSMISSION</button>
+        <button type="reset">RESET SYSTE</button>
+</form>
+<script src="..\scripts\launch.js"></script>
+</body>
+</html>
